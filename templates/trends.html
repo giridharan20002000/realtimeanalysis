@@ -1,0 +1,97 @@
+<html>
+             <head>
+   <link REL="StyleSheet" TYPE="text/css" HREF="/static/css/e.css">
+
+
+<h1><center>Real Time Social Media Data Analysis</center></h1>
+</head>
+<body>
+<center>
+<br>
+<hr style="width:100%;border-top: 5px dashed #006994">
+<h1>news world</h1>
+<hr style="width:100%;border-top: 5px dashed #006994">
+<h1>{{news1}}   SOURCE:<a href={{url1}}>{{newsou1}}</a></h1>
+<h2>{{new1des}}</h2>
+<br>
+<hr style="width:100%;border-top: 5px dashed #006994">
+<h1>{{news2}}   SOURCE:<a href={{url2}}>{{newsou2}}</a></h1>
+<h2>{{new2des}}</h2>
+<br>
+<hr style="width:100%;border-top: 5px dashed #006994">
+<h1>{{news3}}   SOURCE:<a href={{url3}}>{{newsou3}}</a></h1>
+<h2>{{new3des}}</h2>
+<br>
+<hr style="width:100%;border-top: 5px dashed #006994">
+<h1>social media trends</h1>
+<hr style="width:100%;border-top: 5px dashed #006994">
+<table cellspacing="50px">
+<h1 style="text-align:center;">
+<tr>
+
+  {% for key, value in hip0.items() %}
+    
+    <td><a href={{value}}>{{key}}</a></td>
+       
+       
+  {% endfor %}
+  </tr>
+<tr>
+
+  {% for key, value in hip1.items() %}
+    
+    <td><a href={{value}}>{{key}}</a></td>
+       
+       
+  {% endfor %}
+  </tr>
+  <tr>
+
+  {% for key, value in hip2.items() %}
+    
+    <td><a href={{value}}>{{key}}</a></td>
+       
+       
+  {% endfor %}
+  </tr>
+  <tr>
+
+  {% for key, value in hip3.items() %}
+    
+    <td><a href={{value}}>{{key}}</a></td>
+       
+       
+  {% endfor %}
+  </tr>
+    
+  </h1>
+</table>
+<hr style="width:100%;border-top: 5px dashed #006994">
+<h1>search trends</h1>
+<hr style="width:100%;border-top: 5px dashed #006994">
+<table cellspacing="50px">
+<h1 style="text-align:center;">
+<tr>
+{% for key,value in dip0.items() %}
+    <td>{{value}}</td>
+  {% endfor %}
+  </tr>
+  <tr>
+{% for key,value in dip1.items() %}
+<td>{{value}}</td>
+{% endfor %}
+  </tr>
+  <tr>
+{% for key,value in dip2.items() %}
+<td>{{value}}</td>
+{% endfor %}
+  </tr>
+  <tr>
+{% for key,value in dip3.items() %}
+<td>{{value}}</td>
+{% endfor %}
+  </tr>
+  </h1>
+</table>
+</body>
+</html>
