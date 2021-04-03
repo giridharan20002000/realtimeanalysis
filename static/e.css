@@ -1,0 +1,11 @@
+body {
+background-image: url("/static/images/giri.png");
+  
+  background-repeat: repeat;
+color:  #006994;
+                 
+}
+input[type=submit] {
+  background-color: #006994;
+  color: white;
+}
