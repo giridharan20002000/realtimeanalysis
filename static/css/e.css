@@ -1,0 +1,26 @@
+
+input[type=button], input[type=submit], input[type=reset]  {
+  background-color: #008CBA; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+body {
+background-image: url("/static/images/giri.png");
+  
+  background-repeat: repeat;
+color:  #006994;
+                 
+}
+input[type=submit] {
+  background-color: #006994;
+  color: white;
+}
+h1{
+input[type=text] {
+  border: 4px solid red;
+  border-radius: 4px;
+}}
+hr {
+  border-top: 100px dashed #006994;
+}
