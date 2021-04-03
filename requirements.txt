@@ -70,8 +70,6 @@ mistune==0.8.4
 more-itertools==8.0.2
 nbconvert==5.6.1
 nbformat==4.4.0
-nlpk==0.0.6
-nltk==3.4.5
 numpy==1.18.0
 numpydoc==0.9.1
 oauthlib==3.1.0
