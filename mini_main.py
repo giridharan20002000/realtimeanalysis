@@ -343,7 +343,7 @@ def main2():
     
     main1()
     
-    return render_template('hello.html', postive=ptweets,negative=ntweets,d=searchtweet,img=imag,wik=wiki[0],news1=title[0],new1des=desp[0],newsou1=source[0],url1=url1[0],news2=title[1],new2des=desp[1],newsou2=source[1],url2=url1[1],news3=title[2],new3des=desp[2],newsou3=source[2],url3=url1[2])
+    return render_template('templates/hello.html', postive=ptweets,negative=ntweets,d=searchtweet,img=imag,wik=wiki[0],news1=title[0],new1des=desp[0],newsou1=source[0],url1=url1[0],news2=title[1],new2des=desp[1],newsou2=source[1],url2=url1[1],news3=title[2],new3des=desp[2],newsou3=source[2],url3=url1[2])
 @app.route('/trends',methods = ['POST', 'GET'])
 def main4():
     idi=0,
@@ -440,13 +440,13 @@ def main4():
     ihip=3
     for i in range(9,12):
         hip[ihip][di[0]['trends'][i]['name']]=di[0]['trends'][i]['url']
-    return render_template('trends.html',news1=newtitle[0],new1des=newdesp[0],newsou1=newsource[0],url1=newurl[0],news2=newtitle[1],new2des=newdesp[1],newsou2=newsource[1],url2=newurl[1],news3=newtitle[2],new3des=newdesp[2],newsou3=newsource[2],url3=newurl[2],hip0=hip[0],hip1=hip[1],hip2=hip[2],hip3=hip[3],dip0=dip[0],dip1=dip[1],dip2=dip[2],dip3=dip[3])
+    return render_template('templates/trends.html',news1=newtitle[0],new1des=newdesp[0],newsou1=newsource[0],url1=newurl[0],news2=newtitle[1],new2des=newdesp[1],newsou2=newsource[1],url2=newurl[1],news3=newtitle[2],new3des=newdesp[2],newsou3=newsource[2],url3=newurl[2],hip0=hip[0],hip1=hip[1],hip2=hip[2],hip3=hip[3],dip0=dip[0],dip1=dip[1],dip2=dip[2],dip3=dip[3])
     
     
    
 @app.route('/')
 def main3():
-    return render_template('update.html')
+    return render_template('templates/update.html')
     
 
 if __name__ == "__main__": 
